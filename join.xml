@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@color/navajowhite">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+        android:layout_marginTop="100dp"
+        android:text="맛필 함께하기"
+        android:fontFamily="@font/gungseo"
+        android:textStyle="bold"
+        android:textColor="@color/brown"/>
+    <EditText
+        android:id="@+id/tf_new_identy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_mainlogo"
+        android:inputType="text"
+        android:hint="아이디"/>
+
+    <EditText
+        android:id="@+id/tf_new_pwd"
+        android:layout_below="@id/tf_new_identy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="비밀번호"/>
+
+    <android.widget.Button
+        android:id="@+id/btn_join_check"
+        android:layout_below="@id/tf_new_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="가입하기"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/brown"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:id="@+id/img_mainlogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cooking" />
+</RelativeLayout>
