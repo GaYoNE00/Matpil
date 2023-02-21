@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@color/navajowhite">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+        android:layout_marginTop="100dp"
+        android:text="맛 고르기"
+        android:fontFamily="@font/gungseo"
+        android:textStyle="bold"
+        android:textColor="@color/brown"/>
+
+    <!--맵게-->
+    <TextView
+        android:id="@+id/txt_spy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img_mainlogo"
+        android:textSize="20dp"
+        android:text="맵기 정도"
+        android:fontFamily="@font/gungseo"
+        android:textStyle="bold"
+        android:textColor="@color/brown"/>
+
+
+    <RadioGroup
+        android:id="@+id/rdo_spy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_spy"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btn_spy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_radio"
+            android:button="@null"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="맵게"
+            android:textAlignment="center"
+            android:textColor="@drawable/selector_radio_text" />
+
+        <RadioButton
+            android:id="@+id/btn_no_spy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_radio"
+            android:button="@null"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="맵찔"
+            android:textAlignment="center"
+            android:textColor="@drawable/selector_radio_text" />
+    </RadioGroup>
+
+    <!--달게-->
+    <TextView
+        android:id="@+id/txt_sug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rdo_spy"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="달달 정도"
+        android:fontFamily="@font/gungseo"
+        android:textStyle="bold"
+        android:textColor="@color/brown"/>
+
+
+    <RadioGroup
+        android:id="@+id/rdo_sug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_sug"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btn_sug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_radio"
+            android:button="@null"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="달달"
+            android:textAlignment="center"
+            android:textColor="@drawable/selector_radio_text" />
+
+        <RadioButton
+            android:id="@+id/btn_no_sug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_radio"
+            android:button="@null"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="안달"
+            android:textAlignment="center"
+            android:textColor="@drawable/selector_radio_text" />
+    </RadioGroup>
+
+    <!--짜게-->
+    <TextView
+        android:id="@+id/txt_salty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rdo_sug"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:text="짠맛 정도"
+        android:fontFamily="@font/gungseo"
+        android:textStyle="bold"
+        android:textColor="@color/brown"/>
+
+
+    <RadioGroup
+        android:id="@+id/rdo_sal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_salty"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btn_sal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_radio"
+            android:button="@null"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="짜! "
+            android:textAlignment="center"
+            android:textColor="@drawable/selector_radio_text" />
+
+        <RadioButton
+            android:id="@+id/btn_no_sal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_radio"
+            android:button="@null"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="안짜!"
+            android:textAlignment="center"
+            android:textColor="@drawable/selector_radio_text" />
+    </RadioGroup>
+
+
+
+    <android.widget.Button
+        android:id="@+id/btn_login"
+        android:layout_below="@id/rdo_sal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="가입하기"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/brown"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:id="@+id/img_mainlogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/select_logo" />
+</RelativeLayout>
