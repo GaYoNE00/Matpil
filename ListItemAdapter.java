@@ -62,5 +62,6 @@ public class ListItemAdapter extends BaseAdapter {
 
     public void addItem(ListItem item){
         items.add(item);
+        
     }
 }
